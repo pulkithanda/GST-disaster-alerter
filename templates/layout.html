@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--====== USEFULL META ======-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--====== TITLE TAG ======-->
+    <title>Direct Relief: {% block title %}{% endblock %}</title>
+
+    <!--====== FAVICON ICON =======-->
+    <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/d/d3/Direct-Relief-Square.png">
+
+
+    <!--====== STYLESHEETS ======-->
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/stellarnav.min.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--====== MAIN STYLESHEETS ======-->
+    <link href="../static/style.css" rel="stylesheet">
+    <link href="../static/css/responsive.css" rel="stylesheet">
+
+    <script src="../static/js/vendor/modernizr-2.8.3.min.js"></script>
+    
+   
+</head>
+
+<body class="home-one">
+
+    <!--- PRELOADER -->
+    <div class="preeloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+<!--START TOP AREA-->
+    <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
+        <!--MAINMENU AREA-->
+        <div class="mainmenu-area" id="mainmenu-area">
+            <div class="mainmenu-area-bg"></div>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="#home" class="navbar-brand"><img src="../static/img/logo.png" alt="logo" style="margin-top: 10px;"></a>
+                    </div>
+                    <div id="main-nav" class="stellarnav ">
+                        <ul id="nav" class="nav navbar-nav">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/commonalerts">Issue Alerts</a> </li>
+                            <li><a href="/viewcommonalerts">View Alerts</a></li>
+                            <li><a href="/govtalerts">Issue Govt Alert</a></li>
+                            <li><a href="/viewgovtalerts">View Govt Alert</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+ </header>
+        <!--END MAINMENU AREA END-->
+
+        {% if get_flashed_messages() %}
+            <header>
+                <div class="alert alert-primary border text-center" role="alert">
+                    {{ get_flashed_messages() | join(" ") }}
+                </div>
+            </header>
+        {% endif %}
+
+        <main class="container p-5">
+            {% block main %}{% endblock %}
+        </main>
+
+         <!--====== SCRIPTS JS ======-->
+    <script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../static/js/vendor/bootstrap.min.js"></script>
+
+    <!--====== PLUGINS JS ======-->
+    <script src="../static/js/vendor/jquery.easing.1.3.js"></script>
+    <script src="../static/js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../static/js/vendor/jquery.appear.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/stellar.js"></script>
+    <script src="../static/js/wow.min.js"></script>
+    <script src="../static/js/stellarnav.min.js"></script>
+    <script src="../static/js/contact-form.js"></script>
+    <script src="../static/js/jquery.sticky.js"></script>
+
+    <!--===== ACTIVE JS=====-->
+    <script src="../static/js/main.js"></script>
+
+    </body>
+
+</html>

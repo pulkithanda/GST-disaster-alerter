@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Common
+{% endblock %}
+{% block main %}
+<br>
+<br>
+<br>
+<br>
+    <form action="\commonalerts" method="post">
+    <div>
+        <input autocomplete="off" autofocus class="form-control" name="calamity" placeholder="Calamity" type="text"/>
+    </div>
+    <p>   </p>
+        <input autocomplete="off" autofocus class="form-control" name="location" placeholder="Location(State,Country)" type="text"/>
+    </div>
+    <p>   </p>
+            <input autocomplete="off" autofocus class="form-control" name="description" placeholder="Description" type="text"/>
+    </div>
+    <p>   </p>
+    <button class="btn btn-primary" type="submit">Issue Alert</button>
+    </form>
+    <br>
+    <br>
+    <br>
+
+
+{% endblock %}
