@@ -6,6 +6,8 @@ from tempfile import mkdtemp
 from werkzeug.exceptions import default_exceptions
 from werkzeug.security import check_password_hash, generate_password_hash
 
+from dotenv import load_dotenv
+load_dotenv()
 
 import sqlite3
 
@@ -144,4 +146,5 @@ def viewcommonalerts():
         alerts.append(s)
     return render_template("view.html",rows=alerts,alert="Common Alerts")
 
-app.run(debug=True)
+PORT= os.getenv('PORT') 
+app.run(port=PORT, debug=True)
