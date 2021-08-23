@@ -147,4 +147,4 @@ def viewcommonalerts():
     return render_template("view.html",rows=alerts,alert="Common Alerts")
 
 PORT= os.getenv('PORT') 
-app.run(port=PORT)
+app.run(port=5000, debug=True)
