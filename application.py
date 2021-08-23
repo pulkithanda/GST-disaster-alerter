@@ -144,4 +144,4 @@ def viewcommonalerts():
         alerts.append(s)
     return render_template("view.html",rows=alerts,alert="Common Alerts")
 
-app.run(host='0.0.0.0',port=80,debug=True)
+app.run(debug=True)
