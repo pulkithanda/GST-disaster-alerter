@@ -11,21 +11,19 @@ INSTRUCTIONS TO RUN THE APPLICATION
 BASIC IDEA
 -------------------------------------------------------------------------
 
-The basic idea of the web application I have going to make is that 
+The basic idea of the web application I made is to make sure that
 users will be able to get notifications at the time of any calamity like
 earthquakes, floods and hurricanes by getting alerts from anyone who gets
 to know of the calamity quickly by getting a notification in the form of
-images posted online or any common text broadcasts according to their 
-location.
+images posted online or any common text broadcasts.
 Once the user is informed of the calamity, the user follows the emergency steps to be 
-taken during the time of the calamity.We also incorporate government agencies 
+taken during the time of the calamity.I have also incorporated government agencies 
 to notify in case of a hurricane or flood beforehand through the application 
 and also provide various fast access emergency numbers in the application.
 
 In all, the alertness and conciousness of the people and government agencies 
 near the calamity area can help to broadcast the calamities like hurricanes and
-floods while earthquakes can also be known of by the same alongwith the help of the 
-gyroscopic sensor and accelerometer in a smartphone.
+floods while earthquakes can also be known of by the same. 
    
 ----------------------------------------------------------------------------------
 DETAILS
@@ -40,7 +38,6 @@ DETAILS
             
             --Call government emergency numbers like ambulance, fire brigade,etc.
             
-            --Call and warn dear ones who may be near you.
 ### FLOOD
 
   - The application then gives all the precautions to be taken by the user during the time of the 
@@ -49,8 +46,6 @@ DETAILS
             --Vacate to places where water cannot stay easily like high rise buildings or open fields.
             
             --Call government emergency numbers like ambulance, etc.
-            
-            --Call and warn dear ones who may be near you.
             
             --Open as many unclosed sewage and drainage systems as possible in the surrounding area.
             
@@ -64,8 +59,7 @@ DETAILS
             --Vacate to a building alongwith anyone who is surrounding you.
             
             --Call government emergency numbers like ambulance, fire brigade,etc.
-            
-            --Call and warn dear ones who may be near you.
+
             
 ------------------------------------------------------------------------------------------------------------
 
